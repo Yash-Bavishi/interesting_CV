@@ -1,0 +1,155 @@
+body {
+	background-image: url("../images/blog/Blog\ bg.svg");
+	background-position: top;
+}
+
+header {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 800px;
+	align-self: center;
+	transform: translateX(50%);
+	margin-bottom: 4rem;
+	margin-top: 1rem;
+}
+
+header img {
+	width: 800px;
+	height: auto;
+	margin-top: 4rem;
+	/* height: 450px; */
+}
+
+header > small {
+	font-size: 10px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 3.84px;
+	word-wrap: break-word;
+	opacity: 0.4;
+}
+
+header h1 a {
+	font-family: "Times New Roman", Times, serif;
+}
+header h1 {
+	margin-bottom: 1rem;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: 400;
+	letter-spacing: -0.02em;
+	font-size: 3.5rem;
+	margin-top: 2rem;
+}
+
+header > p {
+	font-size: 14px;
+	opacity: 0.5;
+}
+article {
+	max-width: 800px;
+	transform: translateX(50%);
+}
+
+article > section > * {
+	font-weight: 400;
+	font-family: "Times New Roman", Times, serif;
+}
+
+article > section {
+	margin-bottom: 1rem;
+	padding: 1rem 0;
+}
+
+h2,
+h3,
+h4,
+h5 {
+	margin: 1rem 0;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+article section p,
+article section li {
+	font-size: 1.25rem;
+	font-family: sans-serif;
+}
+
+.section-link {
+	display: inline-flex;
+	border-radius: 4px;
+	margin-left: 0.5rem;
+	padding: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+article section li {
+	margin-bottom: 1rem;
+	list-style: square;
+	list-style-position: inside;
+}
+
+@media screen and (max-width: 800px) {
+	.all-blogs > div {
+		width: 100%;
+		padding: 40px 20px;
+		padding-top: 0;
+	}
+	nav > ul {
+		margin-top: 2rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+	nav > a,
+	nav > ul {
+		position: inherit;
+	}
+	nav {
+		padding: 20px;
+	}
+	header,
+	article {
+		margin-top: none;
+		width: 100%;
+		transform: none;
+		padding: 0 20px;
+	}
+	header {
+		margin-top: 0px;
+	}
+	header > img {
+		width: 100%;
+		margin-top: 2rem;
+	}
+
+	header h1{
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+	}
+
+	h3 {
+		font-size: 1.25rem;
+	}
+
+	h4 {
+		font-size: 1.1rem;
+	}
+	.links{
+		position: absolute;
+	}
+}
