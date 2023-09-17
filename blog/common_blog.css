@@ -134,7 +134,7 @@ article section li {
 		margin-top: 2rem;
 	}
 
-	header h1{
+	header h1 {
 		font-size: 2.5rem;
 	}
 
@@ -149,7 +149,13 @@ article section li {
 	h4 {
 		font-size: 1.1rem;
 	}
-	.links{
+	p {
+		font-size: 1rem;
+	}
+	article > section li {
+		font-size: 1rem;
+	}
+	.links {
 		position: absolute;
 	}
 }
