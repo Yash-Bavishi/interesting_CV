@@ -6,29 +6,58 @@
 		<title>itsmiri_</title>
 		<link rel="stylesheet" href="../common.css" />
 		<link rel="stylesheet" href="./common_blog.css" />
+		<script>
+			function toggleMenu() {
+				var menu_items = document.querySelector("nav > ul");
+				if (menu_items.style.display !== "none") {
+					console.log(menu_items.setAttribute("style", "display: none"));
+				} else {
+					console.log(menu_items.setAttribute("style", "display: block"));
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<!-- Nav -->
 		<nav>
-			<a href="./">its miri</a>
+			<span>
+				<button onclick="toggleMenu()">
+					<svg
+						width="16"
+						height="16"
+						viewBox="0 0 16 16"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M2.66602 5.33325H13.3327M2.66602 10.6666H13.3327"
+							stroke="white"
+							stroke-width="1.25"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</button>
+
+				<a tabindex="1" href="./">its miri</a>
+			</span>
 
 			<ul>
 				<li>
-					<a href="/">Home</a>
+					<a tabindex="2" href="/">Home</a>
 				</li>
 				<li>
-					<a href="/blog.html">Blog</a>
+					<a tabindex="3" href="/blog.html">Blog</a>
 				</li>
 				<li>
-					<a href="/tempalte.html">Template</a>
+					<a tabindex="4" href="/tempalte.html">Template</a>
 				</li>
 				<li>
-					<a href="/tools.html">Tools</a>
+					<a tabindex="5" href="/tools.html">Tools</a>
 				</li>
 			</ul>
 		</nav>
 
-		
 		<!-- Article -->
 		<header>
 			<small>[Design Blog]</small>
@@ -217,7 +246,4 @@
 			</a>
 		</section>
 	</body>
-	<script>
-		document.querySelector("a.section-link");
-	</script>
 </html>

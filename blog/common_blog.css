@@ -122,17 +122,16 @@ article section li {
 	}
 	header,
 	article {
-		margin-top: none;
 		width: 100%;
 		transform: none;
 		padding: 0 20px;
 	}
 	header {
-		margin-top: 0px;
+		margin-top: 2rem;
 	}
 	header > img {
 		width: 100%;
-		margin-top: 2rem;
+		margin-top: 1rem;
 	}
 
 	header h1 {

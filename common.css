@@ -12,6 +12,10 @@
 	color: #f7f7f7;
 }
 
+button {
+	cursor: pointer;
+}
+
 body {
 	background-color: #0a0a0a;
 	background-image: url("./images/Home\ -\ 9.svg");
@@ -30,14 +34,24 @@ a {
 a:hover {
 	opacity: 1;
 }
-nav > a {
+nav > span > button {
+	display: none;
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+nav > span {
 	font-size: 14px;
 	position: fixed;
 	top: 20px;
 	left: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
 }
 
 nav ul {
+	display: block;
 	position: fixed;
 	left: 20px;
 	bottom: 20px;
@@ -69,5 +83,11 @@ nav ul li {
 	}
 	.links {
 		position: absolute;
+	}
+	nav > span > button {
+		display: block;
+	}
+	nav > ul {
+		display: none;
 	}
 }
