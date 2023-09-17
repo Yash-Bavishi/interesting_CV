@@ -4,12 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>itsmiri_</title>
-		<link rel="stylesheet" href="common.css" />
+		<link rel="stylesheet" href="./common.css" />
 		<link rel="stylesheet" href="blog.css" />
 		<script>
 			function toggleMenu() {
 				var menu_items = document.querySelector("nav > ul");
-				if (menu_items.style.display !== "none") {
+				if (menu_items.style.display === "block") {
 					console.log(menu_items.setAttribute("style", "display: none"));
 				} else {
 					console.log(menu_items.setAttribute("style", "display: block"));
@@ -39,7 +39,7 @@
 					</svg>
 				</button>
 
-				<a tabindex="1" href="./">its miri</a>
+				<a tabindex="1" href="./">itsmiri</a>
 			</span>
 
 			<ul>

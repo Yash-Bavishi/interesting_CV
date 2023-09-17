@@ -17,7 +17,7 @@ h1 {
 .all-blogs > div {
 	display: flex;
 	flex-direction: column;
-	margin-top: 1.25rem;
+	margin-top: 4rem;
 	width: 800px;
 	gap: 1.25rem;
 }
