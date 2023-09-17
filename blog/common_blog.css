@@ -85,6 +85,7 @@ article section p,
 article section li {
 	font-size: 1.25rem;
 	font-family: sans-serif;
+	line-height: 1.75rem;
 }
 
 .section-link {
@@ -152,7 +153,8 @@ article section li {
 	p {
 		font-size: 1rem;
 	}
-	article > section li {
+	article section li,
+	article section p {
 		font-size: 1rem;
 	}
 	.links {
